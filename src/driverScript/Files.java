@@ -35,10 +35,11 @@ public class Files {
 				value = csvCell[1];
 				
 				arrayList.add(value);
+				System.out.println(value);
 				
 			}
 			
-			String name = arrayList.get(0);
+			String name = arrayList.get(2);
 			System.out.println("Name : "+name);
 			
 		}catch(Exception e) {
