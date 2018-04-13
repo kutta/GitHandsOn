@@ -30,10 +30,14 @@ public class StringHandler {
 			
 			bufferReader.close();
 			
-			stringBuff = new StringBuffer("KoushicKannan");
+			/*stringBuff = new StringBuffer("KoushicKannan");
 			stringBuff.replace(4, 6, "hi");
 			
-			System.out.println(stringBuff);
+			System.out.println(stringBuff);*/
+			
+			String str = "5000";
+			int iTest = Integer.parseInt(str);
+			System.out.println("Arithmetic Operation on Int: " + (iTest/4));
 			
 		}catch(Exception e) {
 			
