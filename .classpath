@@ -22,5 +22,6 @@
 	<classpathentry kind="lib" path="C:/Users/rajuk/workspace/python/GitON/jars/selenium-java-3.8.1/libs/guava-23.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/rajuk/workspace/python/GitON/jars/selenium-java-3.8.1/libs/httpclient-4.5.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/rajuk/workspace/python/GitON/jars/selenium-java-3.8.1/libs/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rajuk/workspace/python/GitON/jars/extentreports-2.05.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
