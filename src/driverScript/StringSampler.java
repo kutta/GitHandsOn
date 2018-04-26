@@ -2,6 +2,7 @@ package driverScript;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -48,8 +49,10 @@ public class StringSampler {
 		
 		/*swapTwoStrings("Koushic", "Priya");*/
 		
-		characterPercentage("Tiger Runs @ The Speed Of 100 km/hour.");
-		characterPercentage("My e-mail : eMail_Address321@anymail.com");
+		/*characterPercentage("Tiger Runs @ The Speed Of 100 km/hour.");
+		characterPercentage("My e-mail : eMail_Address321@anymail.com");*/
+		
+		replaceSpecificStr("75", "105");
 
 	}
 
@@ -567,5 +570,33 @@ public class StringSampler {
 			e.printStackTrace();
 			
 		}
+	}
+	
+	public static void replaceSpecificStr(String oldStr, String newStr) throws IOException{
+		
+		File file = new File(System.getProperty("user.dir") + "\\testdata\\StudentFile.txt");
+		
+		BufferedReader buffer = new BufferedReader(new FileReader(file));
+		
+		String oldContent = "";
+		
+		String line = buffer.readLine();
+		
+		while(line != null) {
+			
+			oldContent = oldContent+line+System.lineSeparator();
+			
+			line = buffer.readLine();
+		}
+		
+		String newContent = oldContent.replaceAll(oldStr, newStr);
+		
+		FileWriter writer = new FileWriter(file);
+		
+		writer.write(newContent);
+		
+		writer.close();
+		
+		System.out.println("Done");
 	}
 }
