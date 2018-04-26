@@ -13,6 +13,7 @@ public class HashMapTut {
 		hashMap.put("Age", "28");
 		hashMap.put("Gender", "Male");
 		hashMap.put("City", "Bangalore");
+		hashMap.put("City", "Salem");
 		hashMap.put("Place", "Konena Agrahara");
 		
 		if(hashMap.containsKey("City")) {
