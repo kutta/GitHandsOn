@@ -1,9 +1,12 @@
 package driverScript;
 
-import java.io.FileNotFoundException;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.logging.Logger;
 
 import com.opencsv.CSVReader;
@@ -17,7 +20,16 @@ public class Files {
 	public static CSVReader csvReader = null ;
 	public static String csvFile = null;
 	
-	public static void main(String[] args) throws IOException {
+	public static BufferedReader breader = null;
+	public static BufferedWriter bwriter = null;
+	
+	public static void main(String[] args) throws IOException{
+		
+		/*openCsvTest();*/
+		sortTextFile();
+	}
+	
+	public static void openCsvTest() throws IOException {
 		
 		try {
 			
@@ -53,4 +65,48 @@ public class Files {
 		
 	}
 
+	public static void sortTextFile() throws IOException{
+		
+		try {
+			
+			breader = new BufferedReader(new FileReader(System.getProperty("user.dir") + "\\testdata\\Sample.txt"));
+			
+			String currentLine = breader.readLine();
+			
+			arrayList.clear();
+			
+			while(currentLine != null) {
+				
+				arrayList.add(currentLine);
+				
+				currentLine = breader.readLine();
+			}
+			
+			Collections.sort(arrayList);
+			
+			bwriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\testdata\\Sample.txt"));
+			
+			for (String line : arrayList) {
+
+				bwriter.write(line);
+				bwriter.newLine();
+
+			}
+			System.out.println("Sorting Done");
+		}catch(Exception e) {
+			
+			e.printStackTrace();
+		}finally {
+			try {
+				if(breader != null) {
+					breader.close();
+				}
+				if(bwriter != null) {
+					bwriter.close();
+				}
+			}catch(IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
 }
