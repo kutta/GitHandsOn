@@ -47,7 +47,7 @@ public class Files {
 				value = csvCell[1];
 				
 				arrayList.add(value);
-				System.out.println(value);
+				System.out.println("Value :: "+value);
 				
 			}
 			
