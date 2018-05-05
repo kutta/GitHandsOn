@@ -49,10 +49,10 @@ public class StringSampler {
 		
 		/*swapTwoStrings("Koushic", "Priya");*/
 		
-		/*characterPercentage("Tiger Runs @ The Speed Of 100 km/hour.");
-		characterPercentage("My e-mail : eMail_Address321@anymail.com");*/
+		characterPercentage("Tiger Runs @ The Speed Of 100 km/hour.");
+		characterPercentage("My e-mail : eMail_Address321@anymail.com");
 		
-		replaceSpecificStr("75", "105");
+		/*replaceSpecificStr("75", "105");*/
 
 	}
 
@@ -597,6 +597,6 @@ public class StringSampler {
 		
 		writer.close();
 		
-		System.out.println("Done");
+		System.out.println("File Modified");
 	}
 }
