@@ -14,7 +14,11 @@ public class ClassTest {
 	
 	public static void main(String[] args) throws IOException {
 		
-		iteratorTest();
+		/*iteratorTest();*/
+		
+		/*fiboSeries(2);*/
+		
+		fibonacci(8);
 	}
 
 	public static void classTest(String str) throws IOException {
@@ -62,6 +66,51 @@ public class ClassTest {
 			
 			
 			System.out.println(listIt.previous());
+		}
+	}
+	
+	public static void fiboSeries(int num) throws IOException{
+		
+		for(int i=1;i<=num;i++) {
+			
+			System.out.println("Fibonacci Series :: "+getFiboSeries(i));
+		}
+		
+	}
+	
+	public static int getFiboSeries(int num) throws IOException{
+		
+		
+			
+			if(num == 1) {
+				return 1;
+			}
+			
+			if(num == 2) {
+				
+				return 1;
+			}
+			
+			return getFiboSeries(num -1) + getFiboSeries(num -2);
+		
+		
+		
+	}
+	
+	public static void fibonacci(int num) throws IOException{
+		
+		int fi1 = 0;
+		int fi2 = 1;
+		
+		for(int i = 2; i<=num;i++) {
+			
+			int fi3 = fi1 + fi2;
+			
+			System.out.println("Fibo Series :: "+fi3);
+			fi2 = fi1;
+			fi1 = fi3;
+			
+			
 		}
 	}
 }
