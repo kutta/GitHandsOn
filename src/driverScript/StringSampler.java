@@ -16,9 +16,9 @@ public class StringSampler {
 
 	public static void main(String[] args) throws IOException {
 
-		/*String mainArray = "My name is koushic Kannnan ";
+		String mainArray = "My name is koushic Kannnan ";
 		String sumArray = "Passed=40 Failed=20 Skipped=15";
-		String s = "Koushic kannan";*/
+		String s = "Koushic kannan";
 
 		/*longestString(mainArray);*/
 		/*repeatingString(mainArray);*/
@@ -34,7 +34,7 @@ public class StringSampler {
 		/*int arr[] ={11,22,3,34,9,19,234}; 
 		bubbleSortAlgo(arr);*/
 		
-		/*stringTest(mainArray);*/
+		stringTest(mainArray);
 		
 		/*reverseString(s);*/
 		
@@ -49,8 +49,8 @@ public class StringSampler {
 		
 		/*swapTwoStrings("Koushic", "Priya");*/
 		
-		characterPercentage("Tiger Runs @ The Speed Of 100 km/hour.");
-		characterPercentage("My e-mail : eMail_Address321@anymail.com");
+		/*characterPercentage("Tiger Runs @ The Speed Of 100 km/hour.");
+		characterPercentage("My e-mail : eMail_Address321@anymail.com");*/
 		
 		/*replaceSpecificStr("75", "105");*/
 
@@ -267,8 +267,10 @@ public class StringSampler {
 		for(int i=0;i<len;i++) {
 			
 			char first = s[i].charAt(0);
+			char[] ch = s[i].toCharArray();
 			
-			System.out.println(first);
+			/*System.out.println(first);*/
+			System.out.println(ch[1]);
 		}
 		
 	}

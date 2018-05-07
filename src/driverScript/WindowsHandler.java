@@ -1,5 +1,6 @@
 package driverScript;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InterruptedIOException;
 import java.text.NumberFormat;
@@ -8,7 +9,11 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
+import javax.swing.plaf.FileChooserUI;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,6 +21,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.apache.commons.io.FileUtils;
 
 public class WindowsHandler {
 	
@@ -30,7 +36,7 @@ public class WindowsHandler {
 	public static void main(String[] args) throws IOException, ParseException{
 		
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\rajuk\\workspace\\python\\Selenium\\drivers\\chromedriver.exe");
+				"C:\\Users\\KP\\git\\GitHandsOn\\drivers\\chromedriver.exe");
 
 		 driver = new ChromeDriver();
 		
@@ -42,7 +48,8 @@ public class WindowsHandler {
 		
 		/*getAllValuesfromTable();*/
 		
-		isFrameSamp();
+		/*isFrameSamp();*/
+		takeScreenshot();
 		
 	}
 
@@ -206,5 +213,17 @@ public class WindowsHandler {
 		System.out.println("********We are switched to the iframe*******");
 		
 		driver.close();
+	}
+	
+	public static void takeScreenshot() throws IOException{
+		
+		driver.get("http://demo.guru99.com/test/table.html");
+		
+		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
+		FileUtils.copyFile(srcFile, new File("C:\\Users\\KP\\git\\GitHandsOn\\testdata\\screenshot.png"));
+		
+		driver.close();
+		
 	}
 }
