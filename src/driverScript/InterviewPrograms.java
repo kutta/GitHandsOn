@@ -30,8 +30,9 @@ public class InterviewPrograms {
 
 		/*findMaxChar("Hello World");*/
 		
-		int[] test = new int[]  { 0, 1, 2, 2, 2, 2, 5 };
-		System.out.println(removeDuplicateValue(test));
+		
+		/*removeDuplicateValue(new int[]  { 0, 1, 2, 2, 2, 2, 5 });*/
+		removeDuplicateValuewithoutSet(new int[]  { 0, 1, 2, 2, 2, 2, 5 });
 
 	}
 
@@ -207,7 +208,7 @@ public class InterviewPrograms {
 			}
 
 		
-	public static int[] removeDuplicateValue(int[] arr) throws IOException{
+	public static void removeDuplicateValue(int[] arr) throws IOException{
 		
 		Set<Integer> setMap = new HashSet<Integer>();
 		
@@ -225,7 +226,43 @@ public class InterviewPrograms {
 			System.out.println(it.next());
 		}
 		
-		return arr;
+		
+	}
+	
+	public static void removeDuplicateValuewithoutSet(int[] arr) throws IOException{
+		
+		System.out.println("Array with duplicates :: ");
+		
+		for(int i=0; i<arr.length; i++) {
+			
+			System.out.println(arr[i]+"\t");
+		}
+		
+		int noOfUniqueElements = arr.length;
+		
+		for(int i=0; i<noOfUniqueElements; i++) {
+			
+			for(int j=i+1; j<noOfUniqueElements; j++) {
+				
+				if(arr[i] == arr[j]) {
+					
+					arr[j] = arr[noOfUniqueElements-1];
+					
+					noOfUniqueElements--;
+					
+					j--;
+				}
+			}
+		}
+		
+		int[] arrayWithoutDuplicates = Arrays.copyOf(arr, noOfUniqueElements);
+		
+		System.out.println("Array without duplicates :: ");
+		
+		for(int m=0;m<arrayWithoutDuplicates.length;m++) {
+			
+			System.out.println(arrayWithoutDuplicates[m]+"\t");
+		}
 	}
 
 }
