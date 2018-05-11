@@ -1,7 +1,9 @@
 package driverScript;
 
+import java.awt.List;
 import java.io.IOException;
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -9,6 +11,9 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.Set;
+
+import net.bytebuddy.dynamic.scaffold.MethodGraph.Node;
+
 import java.util.Map.Entry;
 
 public class InterviewPrograms {
@@ -30,9 +35,10 @@ public class InterviewPrograms {
 
 		/*findMaxChar("Hello World");*/
 		
+		System.out.println(isPrime(13));
 		
 		/*removeDuplicateValue(new int[]  { 0, 1, 2, 2, 2, 2, 5 });*/
-		removeDuplicateValuewithoutSet(new int[]  { 0, 1, 2, 2, 2, 2, 5 });
+		/*removeDuplicateValuewithoutSet(new int[]  { 0, 1, 2, 2, 2, 2, 5 });*/
 
 	}
 
@@ -114,6 +120,8 @@ public class InterviewPrograms {
 
 			System.out.println((String) iterator.next());
 		}
+		
+		
 	}
 
 	public static void reverseString(String str) throws IOException {
@@ -156,7 +164,7 @@ public class InterviewPrograms {
 
 	public static boolean isPrime(int n) throws IOException {
 
-		for (int i = 2; i <= n; i++) {
+		for (int i = 2; i <= n/2; i++) {
 
 			if (n % i == 0) {
 				return false;
@@ -264,5 +272,5 @@ public class InterviewPrograms {
 			System.out.println(arrayWithoutDuplicates[m]+"\t");
 		}
 	}
-
+	
 }
