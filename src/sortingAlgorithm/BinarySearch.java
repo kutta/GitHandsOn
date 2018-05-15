@@ -8,7 +8,7 @@ public class BinarySearch {
 		// TODO Auto-generated method stub
 		
 		int[] arr = {2, 4, 6, 8, 10, 12, 14, 16};
-		System.out.println("Key 4's position: "+binarySearch(arr, 16));
+		System.out.println("Key 2's position: "+binarySearch(arr, 2));
 
 	}
 	
