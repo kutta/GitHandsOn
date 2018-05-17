@@ -6,10 +6,12 @@ import org.testng.annotations.Test;
 
 import clearTrip_PageObject.Base;
 import clearTrip_PageObject.FlightSearchPage;
+import clearTrip_PageObject.SearchPageResult;
 
 public class DriverScript extends Base{
 	
 	FlightSearchPage fsp = new FlightSearchPage();
+	SearchPageResult spr = new SearchPageResult();
 	
 	@BeforeSuite
 	public void start() throws Exception{
@@ -29,6 +31,8 @@ public class DriverScript extends Base{
 		
 		
 		fsp.searchRoundTripFlight("Bangalore, IN - Kempegowda International Airport (BLR)", "Chennai, IN - Chennai Airport (MAA)");
+		
+		spr.searchFlighResult();
 	}
 
 }

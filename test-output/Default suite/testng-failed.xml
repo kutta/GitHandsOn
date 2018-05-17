@@ -5,6 +5,7 @@
     <classes>
       <class name="clearTrip_TestClass.DriverScript">
         <methods>
+          <include name="close"/>
           <include name="roundTripFlightSearch"/>
           <include name="start"/>
         </methods>
