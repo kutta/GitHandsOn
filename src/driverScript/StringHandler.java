@@ -15,7 +15,7 @@ public class StringHandler {
 		BufferedReader bufferReader = null ;
 		StringBuffer stringBuff = null ;
 		
-		String readValue ;
+		String readValue;
 		
 		try {
 			bufferReader = new BufferedReader(new FileReader(System.getProperty("user.dir")+"\\testdata\\Sample.txt"));
