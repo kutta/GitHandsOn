@@ -36,20 +36,20 @@ public class WindowsHandler {
 	public static void main(String[] args) throws IOException, ParseException{
 		
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\KP\\git\\GitHandsOn\\drivers\\chromedriver.exe");
+				"C:\\Projects\\UDT\\Git-SourceCode\\HandsOn\\drivers\\chromedriver.exe");
 
 		 driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
 		
-		/*windowsHandler();
-		dynamicValuesHandler();
-		dynamicValuesMaxPrice();*/
+		/* windowsHandler(); */
+		/* dynamicValuesHandler(); */
+		 dynamicValuesMaxPrice(); 
 		
 		/*getAllValuesfromTable();*/
 		
 		/*isFrameSamp();*/
-		takeScreenshot();
+		/* takeScreenshot(); */
 		
 	}
 

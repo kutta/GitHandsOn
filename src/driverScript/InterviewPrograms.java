@@ -1,19 +1,7 @@
 package driverScript;
 
-import java.awt.List;
 import java.io.IOException;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Scanner;
-import java.util.Set;
-
-import net.bytebuddy.dynamic.scaffold.MethodGraph.Node;
-
+import java.util.*;
 import java.util.Map.Entry;
 
 public class InterviewPrograms {
@@ -21,24 +9,29 @@ public class InterviewPrograms {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		/*
-		 * removeDupStr();
-		 * 
-		 * stringManipulation("Hello welcome to India");
-		 */
+		/* removeDupStr(); */
+		/* stringManipulation("Hello welcome to India"); */
 
 		/* arrayToLinkedList(); */
 
 		/* reverseString("kannan"); */
+		/* reverseNumber(986); */
 
 		/* System.out.println(reverseNumber(121)); */
 
-		/*findMaxChar("Hello World");*/
-		
-		System.out.println(isPrime(13));
-		
-		/*removeDuplicateValue(new int[]  { 0, 1, 2, 2, 2, 2, 5 });*/
-		/*removeDuplicateValuewithoutSet(new int[]  { 0, 1, 2, 2, 2, 2, 5 });*/
+		/* findMaxChar("Hello World"); */
+
+		/* System.out.println(isPrime(13)); */
+		/* findMaxChar("Koushic Kannan"); */
+
+		/* removeDuplicateValue(new int[] { 0, 1, 2, 2, 2, 2, 5 }); */
+		/* removeDuplicateValuewithoutSet(new int[] { 0, 1, 2, 2, 2, 2, 5 }); */
+
+		/* printPatternNumber(); */
+		/* printPatternNumberReverse(); */
+		/* printPatternTriangle1(); */
+		printPatternTriangle2();
+		printPatternTriangle3();
 
 	}
 
@@ -120,8 +113,7 @@ public class InterviewPrograms {
 
 			System.out.println((String) iterator.next());
 		}
-		
-		
+
 	}
 
 	public static void reverseString(String str) throws IOException {
@@ -140,10 +132,11 @@ public class InterviewPrograms {
 
 	public static boolean reverseNumber(int num) throws IOException {
 
-		/* System.out.println("Before Reversing :: "+num); */
+		System.out.println("Before Reversing :: " + num);
 
 		int r, re = 0, originalNum;
 		originalNum = num;
+		boolean res = false;
 
 		while (num != 0) {
 
@@ -152,19 +145,19 @@ public class InterviewPrograms {
 			num = num / 10;
 		}
 
-		/* System.out.println("After reversing :: "+re); */
+		System.out.println("After reversing :: " + re);
 
 		if (originalNum == re) {
 
-			return true;
+			return res = true;
 		}
-		return false;
+		return res;
 
 	}
 
 	public static boolean isPrime(int n) throws IOException {
 
-		for (int i = 2; i <= n/2; i++) {
+		for (int i = 2; i <= n / 2; i++) {
 
 			if (n % i == 0) {
 				return false;
@@ -178,99 +171,158 @@ public class InterviewPrograms {
 	public static void findMaxChar(String str) throws IOException {
 
 		HashMap<Character, Integer> hashMap = new HashMap<Character, Integer>();
-		
 
-			char[] charArray = str.toLowerCase().toCharArray();
+		char[] charArray = str.toLowerCase().toCharArray();
 
-		
-				for (char c : charArray) {
+		for (char c : charArray) {
 
-					if (hashMap.containsKey(c)) {
+			if (hashMap.containsKey(c)) {
 
-						hashMap.put(c, hashMap.get(c) + 1);
-					} else {
+				hashMap.put(c, hashMap.get(c) + 1);
+			} else {
 
-						hashMap.put(c, 1);
-					}
-				}
-				
-				
-				Character repeatedWord = null;
-				int count = 0;
-				
-				Set<Entry<Character, Integer>> entrySet = hashMap.entrySet();
-				
-				for(Entry<Character, Integer> entry : entrySet) {
-					
-					if(entry.getValue() > count) {
-						
-						repeatedWord = entry.getKey();
-						count = entry.getValue();
-					}
-				}
-				
-				System.out.println("The most repeated word in input file is : "+repeatedWord);
-		        
-		        System.out.println("Number Of Occurrences : "+count);
-
+				hashMap.put(c, 1);
 			}
+		}
 
-		
-	public static void removeDuplicateValue(int[] arr) throws IOException{
-		
+		Character repeatedWord = null;
+		int count = 0;
+
+		Set<Entry<Character, Integer>> entrySet = hashMap.entrySet();
+
+		for (Entry<Character, Integer> entry : entrySet) {
+
+			if (entry.getValue() > count) {
+
+				repeatedWord = entry.getKey();
+				count = entry.getValue();
+			}
+		}
+
+		System.out.println("The most repeated word in input file is : " + repeatedWord);
+
+		System.out.println("Number Of Occurrences : " + count);
+
+	}
+
+	public static void removeDuplicateValue(int[] arr) throws IOException {
+
 		Set<Integer> setMap = new HashSet<Integer>();
-		
+
 		int len = arr.length;
-		
-		for(int i = 0; i < len; i++) {
-			
+
+		for (int i = 0; i < len; i++) {
+
 			setMap.add(arr[i]);
 		}
-		
+
 		Iterator<Integer> it = setMap.iterator();
-		
-		while(it.hasNext()) {
-			
+
+		while (it.hasNext()) {
+
 			System.out.println(it.next());
 		}
-		
-		
+
 	}
-	
-	public static void removeDuplicateValuewithoutSet(int[] arr) throws IOException{
-		
+
+	public static void removeDuplicateValuewithoutSet(int[] arr) throws IOException {
+
 		System.out.println("Array with duplicates :: ");
-		
-		for(int i=0; i<arr.length; i++) {
-			
-			System.out.println(arr[i]+"\t");
+
+		for (int i = 0; i < arr.length; i++) {
+
+			System.out.println(arr[i] + "\t");
 		}
-		
+
 		int noOfUniqueElements = arr.length;
-		
-		for(int i=0; i<noOfUniqueElements; i++) {
-			
-			for(int j=i+1; j<noOfUniqueElements; j++) {
-				
-				if(arr[i] == arr[j]) {
-					
-					arr[j] = arr[noOfUniqueElements-1];
-					
+
+		for (int i = 0; i < noOfUniqueElements; i++) {
+
+			for (int j = i + 1; j < noOfUniqueElements; j++) {
+
+				if (arr[i] == arr[j]) {
+
+					arr[j] = arr[noOfUniqueElements - 1];
+
 					noOfUniqueElements--;
-					
+
 					j--;
 				}
 			}
 		}
-		
+
 		int[] arrayWithoutDuplicates = Arrays.copyOf(arr, noOfUniqueElements);
-		
+
 		System.out.println("Array without duplicates :: ");
-		
-		for(int m=0;m<arrayWithoutDuplicates.length;m++) {
-			
-			System.out.println(arrayWithoutDuplicates[m]+"\t");
+
+		for (int m = 0; m < arrayWithoutDuplicates.length; m++) {
+
+			System.out.println(arrayWithoutDuplicates[m] + "\t");
+		}
+	}
+
+	public static void printPatternNumber() throws IOException {
+
+		int rows = 5;
+		for (int i = 1; i <= rows; i++) {
+			for (int j = 1; j <= i; j++) {
+
+				System.out.print(j + " ");
+			}
+			System.out.println();
+		}
+	}
+
+	public static void printPatternNumberReverse() throws IOException {
+
+		int rows = 6;
+
+		for (int i = 1; i <= rows; i++) {
+			for (int j = rows; j >= i; j--) {
+				System.out.print(j + " ");
+			}
+			System.out.println();
+		}
+	}
+
+	public static void printPatternTriangle1() throws IOException {
+
+		int n = 5;
+
+		for (int i = n; i >= 1; i--) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print(i);
+			}
+
+			System.out.println("");
 		}
 	}
 	
+	public static void printPatternTriangle2() throws IOException {
+
+		int n = 5;
+
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print(i);
+			}
+
+			System.out.println("");
+		}
+	}
+	
+	public static void printPatternTriangle3() throws IOException {
+
+		int n = 5, num = 1;
+
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print(num + " ");
+				num++;
+			}
+
+			System.out.println("");
+		}
+	}
+
 }

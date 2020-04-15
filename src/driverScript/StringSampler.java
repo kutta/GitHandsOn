@@ -20,21 +20,21 @@ public class StringSampler {
 		String sumArray = "Passed=40 Failed=20 Skipped=15";
 		String s = "Koushic kannan";
 
-		/*longestString(mainArray);*/
-		/*repeatingString(mainArray);*/
-		/*sumString(sumArray);*/
-		/*isPalindrome("koushic");*/
+		/* longestString(mainArray); */
+		/* repeatingString(mainArray); */
+		/* sumString(sumArray); */
+		isPalindrome("koushic");
 		
-		/*smallestElement();
+		smallestElement();
 		largestElement();
 		swapNumbers(4,5);
-		*/
+		
 		/*reverseNumbers(1560);*/
 		
 		/*int arr[] ={11,22,3,34,9,19,234}; 
 		bubbleSortAlgo(arr);*/
 		
-		stringTest(mainArray);
+		/* stringTest(mainArray); */
 		
 		/*reverseString(s);*/
 		
@@ -173,7 +173,7 @@ public class StringSampler {
 	
 	public static void largestElement() throws IOException{
 		
-		int small;
+		int large;
 		int a[] = {12,45,9,34,112,22,5};
 		
 		
@@ -181,17 +181,17 @@ public class StringSampler {
 		
 		/*System.out.println(size);*/
 		
-		small = a[0];
+		large = a[0];
 		
 		for(int i=0;i<size;i++) {
 			
-			if(small < a[i]) {
+			if(large < a[i]) {
 				
-				small = a[i];
+				large = a[i];
 			}
 		}
 		
-		System.out.println("Largest element :: "+ small);
+		System.out.println("Largest element :: "+ large);
 	}
 
 	public static void swapNumbers(int num1, int num2) throws IOException{

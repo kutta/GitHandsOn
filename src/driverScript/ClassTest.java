@@ -18,7 +18,9 @@ public class ClassTest {
 		
 		/*fiboSeries(2);*/
 		
-		fibonacci(8);
+		/* fibonacci(8); */
+		
+		classTest("Koushic");
 	}
 
 	public static void classTest(String str) throws IOException {

@@ -25,8 +25,8 @@ public class Files {
 	
 	public static void main(String[] args) throws IOException{
 		
-		/*openCsvTest();*/
-		sortTextFile();
+		openCsvTest();
+		/* sortTextFile(); */
 	}
 	
 	public static void openCsvTest() throws IOException {

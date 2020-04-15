@@ -16,7 +16,7 @@ public class GetAllLinks {
 	public static void main(String[] args) {
 		
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\rajuk\\workspace\\python\\Selenium\\drivers\\chromedriver.exe");
+				"C:\\Projects\\UDT\\Git-SourceCode\\HandsOn\\drivers\\chromedriver.exe");
 
 		 driver = new ChromeDriver();
 		
