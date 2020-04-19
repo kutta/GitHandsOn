@@ -9,8 +9,6 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
-import javax.swing.plaf.FileChooserUI;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -19,7 +17,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.commons.io.FileUtils;
 
@@ -42,14 +39,14 @@ public class WindowsHandler {
 		
 		driver.manage().window().maximize();
 		
-		/* windowsHandler(); */
+		 windowsHandler(); 
 		/* dynamicValuesHandler(); */
-		 dynamicValuesMaxPrice(); 
+		/* dynamicValuesMaxPrice(); */
 		
 		/*getAllValuesfromTable();*/
 		
 		/*isFrameSamp();*/
-		/* takeScreenshot(); */
+		 takeScreenshot(); 
 		
 	}
 
