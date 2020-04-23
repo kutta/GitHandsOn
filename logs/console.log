@@ -1,0 +1,122 @@
+[2020-04-21 17:51:42 INFO  TableHandling:32] - Driver instantiated
+[2020-04-21 17:52:24 INFO  TableHandling:76] - Number of cells In Row 0 are 3
+[2020-04-21 17:52:24 INFO  TableHandling:85] - Cell Value of row number 0 and column number 0 Is 1
+[2020-04-21 17:52:24 INFO  TableHandling:85] - Cell Value of row number 0 and column number 1 Is 2
+[2020-04-21 17:52:24 INFO  TableHandling:85] - Cell Value of row number 0 and column number 2 Is 3
+[2020-04-21 17:52:24 INFO  TableHandling:76] - Number of cells In Row 1 are 3
+[2020-04-21 17:52:24 INFO  TableHandling:85] - Cell Value of row number 1 and column number 0 Is 4
+[2020-04-21 17:52:24 INFO  TableHandling:85] - Cell Value of row number 1 and column number 1 Is 5
+[2020-04-21 17:52:24 INFO  TableHandling:85] - Cell Value of row number 1 and column number 2 Is 6
+[2020-04-21 17:52:24 INFO  TableHandling:76] - Number of cells In Row 2 are 2
+[2020-04-21 17:52:24 INFO  TableHandling:85] - Cell Value of row number 2 and column number 0 Is 5
+[2020-04-21 17:52:24 INFO  TableHandling:85] - Cell Value of row number 2 and column number 1 Is 6
+[2020-04-21 17:52:25 INFO  TableHandling:76] - Number of cells In Row 3 are 3
+[2020-04-21 17:52:25 INFO  TableHandling:85] - Cell Value of row number 3 and column number 0 Is 6
+[2020-04-21 17:52:25 INFO  TableHandling:85] - Cell Value of row number 3 and column number 1 Is 7
+[2020-04-21 17:52:25 INFO  TableHandling:85] - Cell Value of row number 3 and column number 2 Is 8
+[2020-04-21 17:52:25 INFO  TableHandling:76] - Number of cells In Row 4 are 1
+[2020-04-21 17:52:25 INFO  TableHandling:85] - Cell Value of row number 4 and column number 0 Is 7
+[2020-04-21 17:52:26 INFO  TableHandling:49] - Session closed
+[2020-04-21 17:53:02 INFO  RestAssuredAuto:101] - Login Response --> {"userInfo":{"platformUserId":"FADB5990BB734A99B6CAC272C211C10A"},"serviceNotificationList":["Regression Phase 20 03 : API security for Testing FMS is In Progress for R20_03 Release","Regression 2003 : Regression Testing has been started for R20_03 Release.."],"vehicleList":{},"alerts":{"fuelAlertCount":0,"geofenceAlertCount":0},"featureList":["Help","Performance","Trace","Track","Alerts-Geofence"],"customerName":"A_Cust_India_ID","token":"deeb0aea-6443-44b3-bfa4-d449a88296bc","movingCount":0,"ignitionOnCount":0,"ignitionOffCount":0,"noCommunicationCount":0,"noDataCount":0,"activeVehicles":0}
+[2020-04-21 17:53:03 INFO  RestAssuredAuto:108] - Mobile token --> deeb0aea-6443-44b3-bfa4-d449a88296bc
+[2020-04-21 17:53:04 INFO  RestAssuredAuto:66] - Dashboard Response Body --> {"serviceNotificationList":["Regression Phase 20 03 : API security for Testing FMS is In Progress for R20_03 Release","Regression 2003 : Regression Testing has been started for R20_03 Release.."],"vehicleList":{},"alerts":{"fuelAlertCount":0,"geofenceAlertCount":0},"featureList":["Help","Performance","Trace","Track","Alerts-Geofence"],"customerName":"A_Cust_India_ID","movingCount":0,"ignitionOnCount":0,"ignitionOffCount":0,"noCommunicationCount":0,"noDataCount":0,"activeVehicles":0}
+[2020-04-21 17:53:04 INFO  RestAssuredAuto:70] - Customer name -->A_Cust_India_ID
+[2020-04-21 17:53:04 INFO  RestAssuredAuto:74] - Active Vehicles -->0
+[2020-04-21 17:53:04 INFO  RestAssuredAuto:77] - Feature List --> [Help, Performance, Trace, Track, Alerts-Geofence]
+[2020-04-21 18:02:40 INFO  TableHandling:32] - Driver instantiated
+[2020-04-21 18:02:47 INFO  TableHandling:76] - Number of cells In Row 0 are 3
+[2020-04-21 18:02:47 INFO  TableHandling:87] - Cell Value of row number 0 and column number 0 Is 1
+[2020-04-21 18:02:47 INFO  TableHandling:87] - Cell Value of row number 0 and column number 1 Is 2
+[2020-04-21 18:02:47 INFO  TableHandling:87] - Cell Value of row number 0 and column number 2 Is 3
+[2020-04-21 18:02:47 INFO  TableHandling:76] - Number of cells In Row 1 are 3
+[2020-04-21 18:02:47 INFO  TableHandling:87] - Cell Value of row number 1 and column number 0 Is 4
+[2020-04-21 18:02:47 INFO  TableHandling:87] - Cell Value of row number 1 and column number 1 Is 5
+[2020-04-21 18:02:47 INFO  TableHandling:87] - Cell Value of row number 1 and column number 2 Is 6
+[2020-04-21 18:02:47 INFO  TableHandling:76] - Number of cells In Row 2 are 2
+[2020-04-21 18:02:47 INFO  TableHandling:87] - Cell Value of row number 2 and column number 0 Is 5
+[2020-04-21 18:02:47 INFO  TableHandling:87] - Cell Value of row number 2 and column number 1 Is 6
+[2020-04-21 18:02:47 INFO  TableHandling:76] - Number of cells In Row 3 are 3
+[2020-04-21 18:02:47 INFO  TableHandling:87] - Cell Value of row number 3 and column number 0 Is 6
+[2020-04-21 18:02:47 INFO  TableHandling:87] - Cell Value of row number 3 and column number 1 Is 7
+[2020-04-21 18:02:47 INFO  TableHandling:87] - Cell Value of row number 3 and column number 2 Is 8
+[2020-04-21 18:02:47 INFO  TableHandling:76] - Number of cells In Row 4 are 1
+[2020-04-21 18:02:47 INFO  TableHandling:87] - Cell Value of row number 4 and column number 0 Is 7
+[2020-04-21 18:02:48 INFO  TableHandling:49] - Session closed
+[2020-04-21 18:04:03 INFO  TableHandling:32] - Driver instantiated
+[2020-04-21 18:04:09 INFO  TableHandling:76] - Number of cells In Row 0 are 3
+[2020-04-21 18:04:09 INFO  TableHandling:76] - Number of cells In Row 1 are 3
+[2020-04-21 18:04:09 INFO  TableHandling:76] - Number of cells In Row 2 are 2
+[2020-04-21 18:04:09 INFO  TableHandling:76] - Number of cells In Row 3 are 3
+[2020-04-21 18:04:09 INFO  TableHandling:76] - Number of cells In Row 4 are 1
+[2020-04-21 18:04:10 INFO  TableHandling:49] - Session closed
+[2020-04-21 18:05:49 INFO  TableHandling:32] - Driver instantiated
+[2020-04-21 18:05:54 INFO  TableHandling:76] - Number of cells In Row 0 are 3
+[2020-04-21 18:05:55 INFO  TableHandling:76] - Number of cells In Row 1 are 3
+[2020-04-21 18:05:55 INFO  TableHandling:76] - Number of cells In Row 2 are 2
+[2020-04-21 18:05:55 INFO  TableHandling:76] - Number of cells In Row 3 are 3
+[2020-04-21 18:05:55 INFO  TableHandling:76] - Number of cells In Row 4 are 1
+[2020-04-21 18:05:56 INFO  TableHandling:49] - Session closed
+[2020-04-21 18:07:38 INFO  TableHandling:32] - Driver instantiated
+[2020-04-21 18:07:45 INFO  TableHandling:76] - Number of cells In Row 0 are 3
+[2020-04-21 18:07:45 INFO  TableHandling:83] - Cell Value of row number 0 and column number 0 Is 1
+[2020-04-21 18:07:45 INFO  TableHandling:83] - Cell Value of row number 0 and column number 1 Is 2
+[2020-04-21 18:07:45 INFO  TableHandling:83] - Cell Value of row number 0 and column number 2 Is 3
+[2020-04-21 18:07:45 INFO  TableHandling:76] - Number of cells In Row 1 are 3
+[2020-04-21 18:07:45 INFO  TableHandling:83] - Cell Value of row number 1 and column number 0 Is 4
+[2020-04-21 18:07:45 INFO  TableHandling:83] - Cell Value of row number 1 and column number 1 Is 5
+[2020-04-21 18:07:45 INFO  TableHandling:83] - Cell Value of row number 1 and column number 2 Is 6
+[2020-04-21 18:07:45 INFO  TableHandling:76] - Number of cells In Row 2 are 2
+[2020-04-21 18:07:45 INFO  TableHandling:83] - Cell Value of row number 2 and column number 0 Is 5
+[2020-04-21 18:07:45 INFO  TableHandling:83] - Cell Value of row number 2 and column number 1 Is 6
+[2020-04-21 18:07:45 INFO  TableHandling:76] - Number of cells In Row 3 are 3
+[2020-04-21 18:07:45 INFO  TableHandling:83] - Cell Value of row number 3 and column number 0 Is 6
+[2020-04-21 18:07:45 INFO  TableHandling:83] - Cell Value of row number 3 and column number 1 Is 7
+[2020-04-21 18:07:45 INFO  TableHandling:83] - Cell Value of row number 3 and column number 2 Is 8
+[2020-04-21 18:07:45 INFO  TableHandling:76] - Number of cells In Row 4 are 1
+[2020-04-21 18:07:45 INFO  TableHandling:83] - Cell Value of row number 4 and column number 0 Is 7
+[2020-04-21 18:07:46 INFO  TableHandling:49] - Session closed
+[2020-04-22 14:55:42 INFO  TableHandling:32] - Driver instantiated
+[2020-04-22 14:55:49 INFO  TableHandling:78] - Number of cells In Row 0 are 3
+[2020-04-22 14:55:49 INFO  TableHandling:85] - Cell Value of row number 0 and column number 0 Is 1
+[2020-04-22 14:55:49 INFO  TableHandling:85] - Cell Value of row number 0 and column number 1 Is 2
+[2020-04-22 14:55:49 INFO  TableHandling:85] - Cell Value of row number 0 and column number 2 Is 3
+[2020-04-22 14:55:49 INFO  TableHandling:78] - Number of cells In Row 1 are 3
+[2020-04-22 14:55:49 INFO  TableHandling:85] - Cell Value of row number 1 and column number 0 Is 4
+[2020-04-22 14:55:49 INFO  TableHandling:85] - Cell Value of row number 1 and column number 1 Is 5
+[2020-04-22 14:55:49 INFO  TableHandling:85] - Cell Value of row number 1 and column number 2 Is 6
+[2020-04-22 14:55:49 INFO  TableHandling:78] - Number of cells In Row 2 are 2
+[2020-04-22 14:55:49 INFO  TableHandling:85] - Cell Value of row number 2 and column number 0 Is 5
+[2020-04-22 14:55:49 INFO  TableHandling:85] - Cell Value of row number 2 and column number 1 Is 6
+[2020-04-22 14:55:49 INFO  TableHandling:78] - Number of cells In Row 3 are 3
+[2020-04-22 14:55:49 INFO  TableHandling:85] - Cell Value of row number 3 and column number 0 Is 6
+[2020-04-22 14:55:49 INFO  TableHandling:85] - Cell Value of row number 3 and column number 1 Is 7
+[2020-04-22 14:55:49 INFO  TableHandling:85] - Cell Value of row number 3 and column number 2 Is 8
+[2020-04-22 14:55:49 INFO  TableHandling:78] - Number of cells In Row 4 are 1
+[2020-04-22 14:55:49 INFO  TableHandling:85] - Cell Value of row number 4 and column number 0 Is 7
+[2020-04-22 14:55:50 INFO  TableHandling:49] - Session closed
+[2020-04-22 14:58:53 INFO  TableHandling:32] - Driver instantiated
+[2020-04-22 14:59:36 INFO  TableHandling:64] - Browser Refresh instantiated
+[2020-04-22 14:59:36 INFO  TableHandling:79] - Number of cells In Row 0 are 3
+[2020-04-22 14:59:36 INFO  TableHandling:86] - Cell Value of row number 0 and column number 0 Is 1
+[2020-04-22 14:59:36 INFO  TableHandling:86] - Cell Value of row number 0 and column number 1 Is 2
+[2020-04-22 14:59:36 INFO  TableHandling:86] - Cell Value of row number 0 and column number 2 Is 3
+[2020-04-22 14:59:36 INFO  TableHandling:79] - Number of cells In Row 1 are 3
+[2020-04-22 14:59:36 INFO  TableHandling:86] - Cell Value of row number 1 and column number 0 Is 4
+[2020-04-22 14:59:36 INFO  TableHandling:86] - Cell Value of row number 1 and column number 1 Is 5
+[2020-04-22 14:59:36 INFO  TableHandling:86] - Cell Value of row number 1 and column number 2 Is 6
+[2020-04-22 14:59:36 INFO  TableHandling:79] - Number of cells In Row 2 are 2
+[2020-04-22 14:59:36 INFO  TableHandling:86] - Cell Value of row number 2 and column number 0 Is 5
+[2020-04-22 14:59:36 INFO  TableHandling:86] - Cell Value of row number 2 and column number 1 Is 6
+[2020-04-22 14:59:36 INFO  TableHandling:79] - Number of cells In Row 3 are 3
+[2020-04-22 14:59:36 INFO  TableHandling:86] - Cell Value of row number 3 and column number 0 Is 6
+[2020-04-22 14:59:36 INFO  TableHandling:86] - Cell Value of row number 3 and column number 1 Is 7
+[2020-04-22 14:59:36 INFO  TableHandling:86] - Cell Value of row number 3 and column number 2 Is 8
+[2020-04-22 14:59:36 INFO  TableHandling:79] - Number of cells In Row 4 are 1
+[2020-04-22 14:59:36 INFO  TableHandling:86] - Cell Value of row number 4 and column number 0 Is 7
+[2020-04-22 14:59:37 INFO  TableHandling:49] - Session closed
+[2020-04-22 15:15:10 INFO  RestAssuredAuto:108] - Login Response --> {"userInfo":{"platformUserId":"FADB5990BB734A99B6CAC272C211C10A"},"serviceNotificationList":["Regression Phase 20 03 : API security for Testing FMS is In Progress for R20_03 Release","Regression 2003 : Regression Testing has been started for R20_03 Release.."],"vehicleList":{},"alerts":{"fuelAlertCount":0,"geofenceAlertCount":0},"featureList":["Help","Performance","Trace","Track","Alerts-Geofence"],"customerName":"A_Cust_India_ID","token":"c2dbaf1a-2218-4efd-8719-3b604abb9b34","movingCount":0,"ignitionOnCount":0,"ignitionOffCount":0,"noCommunicationCount":0,"noDataCount":0,"activeVehicles":0}
+[2020-04-22 15:15:11 INFO  RestAssuredAuto:115] - Mobile token --> c2dbaf1a-2218-4efd-8719-3b604abb9b34
+[2020-04-22 15:15:11 INFO  RestAssuredAuto:70] - Dashboard Response Body --> {"serviceNotificationList":["Regression Phase 20 03 : API security for Testing FMS is In Progress for R20_03 Release","Regression 2003 : Regression Testing has been started for R20_03 Release.."],"vehicleList":{},"alerts":{"fuelAlertCount":0,"geofenceAlertCount":0},"featureList":["Help","Performance","Trace","Track","Alerts-Geofence"],"customerName":"A_Cust_India_ID","movingCount":0,"ignitionOnCount":0,"ignitionOffCount":0,"noCommunicationCount":0,"noDataCount":0,"activeVehicles":0}
+[2020-04-22 15:15:12 INFO  RestAssuredAuto:74] - Customer name -->A_Cust_India_ID
+[2020-04-22 15:15:12 INFO  RestAssuredAuto:78] - Active Vehicles -->0
+[2020-04-22 15:15:12 INFO  RestAssuredAuto:81] - Feature List --> [Help, Performance, Trace, Track, Alerts-Geofence]

@@ -28,10 +28,10 @@ public class InterviewPrograms {
 		/* removeDuplicateValuewithoutSet(new int[] { 0, 1, 2, 2, 2, 2, 5 }); */
 
 		/* printPatternNumber(); */
-		/* printPatternNumberReverse(); */
-		/* printPatternTriangle1(); */
-		printPatternTriangle2();
-		printPatternTriangle3();
+		 printPatternNumberReverse(); 
+		 printPatternTriangle1(); 
+		 printPatternTriangle2(); 
+		/* printPatternTriangle3(); */
 
 	}
 

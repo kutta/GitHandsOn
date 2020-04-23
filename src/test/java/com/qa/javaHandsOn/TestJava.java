@@ -3,7 +3,12 @@ package com.qa.javaHandsOn;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 public class TestJava {
@@ -20,10 +25,11 @@ public class TestJava {
 		/* countWords("Ariella Ferrera"); */
 		/* countCharacters("Syren De Merr"); */
 
-		 int arr[] = {6,1290,289,800,49,776,766,10}; 
-		 largestNumber(arr); 
+		/*
+		 * int arr[] = {6,1290,289,800,49,776,766,10}; largestNumber(arr);
+		 */
 
-		 sortArrayNum(arr); 
+		/* sortArrayNum(arr); */
 
 		/* duplicateCharacters("volvo grup"); */
 
@@ -34,7 +40,25 @@ public class TestJava {
 		/* pattern01(1); */
 
 		/* stringRotation("koushickannan", "kannankoushic"); */
-		/* revStringPreservingSpace("I am koushic"); */
+		/* revStringPreservingSpace("my favourite is ariella ferrara"); */
+
+		/*
+		 * arraylistToArray();
+		 * 
+		 * arrayToArraylist();
+		 */
+
+		/* patternMatching(4); */
+		 
+		/* subStringProgram("koushic"); */
+		 
+		 int[] arrayA = new int[] {7, -5, 3, 8, -4, 11, -19, -21};
+         
+	        int[] arrayB = new int[] {6, 13, -7, 0, 11, -4, 3, -5};
+	        
+	        int[] mergerArr =  mergeArray(arrayA, arrayB);
+	        System.out.println(Arrays.toString(mergerArr));
+
 	}
 
 	public static void largestElement() throws IOException {
@@ -230,11 +254,11 @@ public class TestJava {
 						if (arr[i] > thirdlargest) {
 							fourthlargest = thirdlargest;
 							thirdlargest = arr[i];
-						}else {
-							if(arr[i] > fourthlargest) {
+						} else {
+							if (arr[i] > fourthlargest) {
 								fourthlargest = arr[i];
 							}
-					}
+						}
 					}
 				}
 
@@ -413,9 +437,12 @@ public class TestJava {
 			// For every space in the 'inputStringArray',
 			// we insert spaces in the 'resultArray' at the corresponding positions
 
-			for (int i = 0; i < inputStringArray.length; i++) {
-				if (inputStringArray[i] == ' ') {
+			for(int i = 0; i < inputStringArray.length; i++) {
+				
+				if(inputStringArray[i] == ' ') {
+					
 					resultArray[i] = ' ';
+					
 				}
 			}
 
@@ -427,25 +454,171 @@ public class TestJava {
 			// we copy every non-space character of inputStringArray
 			// from first to last at 'j' position of resultArray
 
-			for (int i = 0; i < inputStringArray.length; i++) {
-				if (inputStringArray[i] != ' ') {
-					// If resultArray already has space at index j then decrementing 'j'
-
-					if (resultArray[j] == ' ') {
-						j--;
+			for(int i = 0; i < inputStringArray.length; i++) {
+				
+				if(inputStringArray[i] != ' ') {
+					
+					if(resultArray[j] == ' ') {
+						j-- ;
 					}
-
+					
 					resultArray[j] = inputStringArray[i];
-
-					j--;
+					j-- ;
 				}
 			}
+			
+			System.out.println(String.valueOf(resultArray));
 
-			System.out.println(str + " ---> " + String.valueOf(resultArray));
 		}
 
 		catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public static void arrayToArraylist() throws IOException {
+
+		String arr[] = { "Koushic", "Kannan" };
+
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+		ArrayList<String> al = new ArrayList<String>(Arrays.asList(arr));
+		al.add("Priya");
+		System.out.println(al);
+	}
+
+	public static void arraylistToArray() throws IOException {
+
+		List<Integer> al = new ArrayList<Integer>();
+		al.add(10);
+		al.add(50);
+		al.add(89);
+
+		Integer[] arr = new Integer[al.size()];
+		arr = al.toArray(arr);
+
+		for (Integer x : arr) {
+			System.out.println(x);
+		}
+
+	}
+
+	public static void patternMatching(int num) throws IOException {
+
+		try {
+
+			/*
+			 * for (int i = 1; i <= num; ++i) { for (int j = 1; j <= i; ++j) {
+			 * System.out.print(j + " "); } System.out.println();
+			 * 
+			 * }
+			 */
+
+			
+
+			for (int i = num; i >= 1; i--) {
+				for (int j = num; j >= i; j--) {
+
+					System.out.print(j);
+
+				}
+				 System.out.println(); 
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+	public static void subStringProgram(String str) throws IOException{
+		try {
+			
+			int len = str.length();
+			
+			for(int i = 0; i < len ; i ++) {
+				for(int j = i+1; j<=len; j++) {
+					System.out.println(str.substring(i,j));
+				}
+			}
+			
+			StringBuilder sb = null;
+			
+			for(int i = 0 ; i < len ; i++) {
+				
+				sb = new StringBuilder().append(str.charAt(i));
+				for(int j = i+1 ; j < len ; j++) {
+					sb.append(str.charAt(j));
+					System.out.println(sb);
+				}
+			}
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static int[] mergeArray(int[] arr1, int[] arr2) throws IOException{
+		
+			
+			//Step 1 : Merging of two arrays
+	         
+	        //Defining mergedArray with combined size of arrayA and arrayB
+			int[] mergeArrays = new int[arr1.length + arr2.length];
+			
+			//Initializing pointers of arrayA, arrayB and mergedArray with 0
+			int i = 0, j = 0 , k = 0;
+			
+			//Inserting all elements of arrayA into mergedArray
+			while(i < arr1.length) {
+				mergeArrays[k] = arr1[i];
+				k++;
+				i++;
+			}
+			
+			//Inserting all elements of arrayB into mergedArray
+			while(j < arr2.length) {
+				mergeArrays[k] = arr2[j];
+				k++;
+				j++;
+							}
+			
+			 //Step 2 : Removing duplicates from merged array
+	         
+	        //Defining one HashSet object called setWithNoDuplicates
+	        //Remember, HashSet allows only unique elements
+			Set<Integer> noDuplicates = new HashSet<Integer>();
+			
+			//Adding all elements of mergedArray into setWithNoDuplicates
+			for(int m = 0 ; m < mergeArrays.length ; m ++) {
+				
+				noDuplicates.add(mergeArrays[m]);
+			}
+			
+			//Now, setWithNoDuplicates will have only unique elements of mergedArray
+	         
+	        //So, now iterate setWithNoDuplicates and 
+	        //add its elements into new array called mergedArrayWithNoDuplicates
+			Iterator<Integer> ite = noDuplicates.iterator();
+			
+			int[] setWithNoDupl = new int[noDuplicates.size()];
+			
+			int n = 0;
+			
+			//Adding all elements of setWithNoDuplicates into mergedArrayWithNoDuplicates
+			
+			while(ite.hasNext()) {
+				setWithNoDupl[n] = ite.next();
+				n++;
+			}
+			
+			//Step 3 : Sorting merged array after removing duplicates
+			Arrays.sort(setWithNoDupl);
+			
+			return setWithNoDupl;
+			
+		
+		
 	}
 }
