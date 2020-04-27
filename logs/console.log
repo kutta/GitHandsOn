@@ -120,3 +120,8 @@
 [2020-04-22 15:15:12 INFO  RestAssuredAuto:74] - Customer name -->A_Cust_India_ID
 [2020-04-22 15:15:12 INFO  RestAssuredAuto:78] - Active Vehicles -->0
 [2020-04-22 15:15:12 INFO  RestAssuredAuto:81] - Feature List --> [Help, Performance, Trace, Track, Alerts-Geofence]
+[2020-04-23 17:13:28 INFO  WindowsHandler:43] - Browser Instantiated
+[2020-04-23 17:14:07 INFO  WindowsHandler:63] - Current window ID : CDwindow-D74D67DDCCBB848D9AB7C4619C56CA73
+[2020-04-23 17:14:11 INFO  WindowsHandler:80] - Closing child window
+[2020-04-23 17:14:11 INFO  WindowsHandler:86] - Switch to main window
+[2020-04-23 17:14:13 INFO  WindowsHandler:90] - Browser session closed

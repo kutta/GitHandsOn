@@ -15,14 +15,15 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 
 public class WindowsHandler {
+	
+	
+	final static Logger Log = Logger.getLogger(WindowsHandler.class.getName());
 	
 	public static WebDriverWait wait = null;
 	public static WebDriver driver = null;
@@ -31,21 +32,23 @@ public class WindowsHandler {
 			.pollingEvery(5, TimeUnit.SECONDS)
 			.ignoring(NoSuchElementException.class);
 	
-	@BeforeTest
-	public static void setUp() throws IOException, ParseException{
+	
+	public static void main(String[] args) throws IOException, ParseException{
 		
 		
 		System.setProperty("webdriver.chrome.driver",
 				System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
 
 		 driver = new ChromeDriver();
+		 Log.info("Browser Instantiated");
 		
 		driver.manage().window().maximize();
-				
+		
+		windowsHandler();
 	}
 
-	@Test(priority = 1, enabled = true)
-	public void windowsHandler() throws InterruptedIOException {
+	
+	public static void windowsHandler() throws InterruptedIOException {
 
 		
 
@@ -55,7 +58,8 @@ public class WindowsHandler {
 		
 
 		String mainWindow = driver.getWindowHandle();
-		System.out.println(mainWindow);
+		
+		Log.info("Current window ID : "+mainWindow);
 
 		driver.findElement(By.xpath("//*[contains(@href,'popup.php')]")).click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -72,21 +76,26 @@ public class WindowsHandler {
 
 				// Closing the Child Window.
 				driver.close();
+				Log.info("Closing child window");
 
 			}
 		}
 
 		// Switching to Parent window i.e Main Window.
+		Log.info("Switch to main window");
 		driver.switchTo().window(mainWindow);
+		
 		driver.close();
+		Log.info("Browser session closed");
 	}
 	
-	@Test(priority = 2, enabled = false)
+	
 	/*Fetch cell value of a particular row and column of the Dynamic Table*/
 	public static void dynamicValuesHandler() throws IOException{
 		
 		driver.get("https://money.rediff.com/gainers/bsc/daily/groupa?");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		
 		WebElement baseTable = driver.findElement(By.tagName("table"));
 		
@@ -106,7 +115,7 @@ public class WindowsHandler {
 		driver.close();
 	}
 
-	@Test(priority = 3, enabled = false)
+	
 	/*Get Maximum of all the Values in a Column of Dynamic Table*/
 	public static void dynamicValuesMaxPrice() throws IOException, ParseException {
 		
@@ -148,7 +157,7 @@ public class WindowsHandler {
 		driver.close();
 	}
 	
-	@Test(priority = 4, enabled = false)
+	
 	/*Get all the values of a Dynamic Table*/
 	public static void getAllValuesfromTable() throws IOException{
 		
@@ -188,7 +197,7 @@ public class WindowsHandler {
 		
 	}
 
-	@Test(priority = 5, enabled = false)
+	
 	public static void isFrameSamp() throws IOException{
 		
 		
@@ -208,7 +217,7 @@ public class WindowsHandler {
 		driver.close();
 	}
 	
-	@Test(priority = 6, enabled = true)
+	
 	public static void takeScreenshot() throws IOException{
 		
 		driver.get("http://demo.guru99.com/test/table.html");
