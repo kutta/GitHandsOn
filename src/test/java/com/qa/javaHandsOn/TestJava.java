@@ -52,12 +52,16 @@ public class TestJava {
 		 
 		/* subStringProgram("koushic"); */
 		 
-		 int[] arrayA = new int[] {7, -5, 3, 8, -4, 11, -19, -21};
-         
-	        int[] arrayB = new int[] {6, 13, -7, 0, 11, -4, 3, -5};
+		/*
+		 * int[] arrayA = new int[] {7, -5, 3, 8, -4, 11, -19, -21};
+		 * 
+		 * int[] arrayB = new int[] {6, 13, -7, 0, 11, -4, 3, -5};
+		 * 
+		 * int[] mergerArr = mergeArray(arrayA, arrayB);
+		 * System.out.println(Arrays.toString(mergerArr));
+		 */
 	        
-	        int[] mergerArr =  mergeArray(arrayA, arrayB);
-	        System.out.println(Arrays.toString(mergerArr));
+	        reverseString("Brandi Love");
 
 	}
 
@@ -619,6 +623,33 @@ public class TestJava {
 			return setWithNoDupl;
 			
 		
+		
+	}
+	
+	//Reverse each word in a string, for example, if input Str = "I Am Ironman",
+	//then the output should be "I mA namnorI"..
+
+	public static void reverseString(String str) throws IOException{
+		
+		String revWord = "";
+		
+		String[] s = str.split(" ");
+		
+		for(int i = 0; i<s.length; i++) {
+			
+			String word = s[i];
+			
+			String revStr = "";
+			
+			for(int j=word.length() - 1; j >=0; j--) {
+				
+				revStr = revStr + word.charAt(j);
+			}
+			
+			revWord = revWord + revStr + " ";
+		}
+		
+		System.out.print(revWord);
 		
 	}
 }

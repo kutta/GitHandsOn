@@ -18,25 +18,25 @@ public class StringSampler {
 
 		String mainArray = "My name is koushic Kannnan ";
 		String sumArray = "Passed=40 Failed=20 Skipped=15";
-		String s = "Koushic kannan";
+		String s = "i am koushic";
 
 		/* longestString(mainArray); */
 		/* repeatingString(mainArray); */
 		/* sumString(sumArray); */
-		isPalindrome("koushic");
+		/*
+		 * isPalindrome("koushic");
+		 * 
+		 * smallestElement(); largestElement(); swapNumbers(4,5);
+		 */
 		
-		smallestElement();
-		largestElement();
-		swapNumbers(4,5);
-		
-		/*reverseNumbers(1560);*/
+		/* reverseNumbers(1560); */
 		
 		/*int arr[] ={11,22,3,34,9,19,234}; 
 		bubbleSortAlgo(arr);*/
 		
 		/* stringTest(mainArray); */
 		
-		/*reverseString(s);*/
+		reverseString(s);
 		
 		/*CountCharacterOccurence("Koushick Kannan");*/
 		
