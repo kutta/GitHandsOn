@@ -13,6 +13,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class TableHandling {
 	
@@ -25,13 +27,18 @@ public class TableHandling {
 		
 		try {
 			
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
+			/*
+			 * System.setProperty("webdriver.chrome.driver",
+			 * System.getProperty("user.dir")+"//drivers//chromedriver");
+			 */
+			
+			WebDriverManager.chromedriver().setup();
 
 			 driver = new ChromeDriver();
 			 Log.info("Driver instantiated");
 			
 			driver.manage().window().maximize();
+			Log.info("Maximize browser window");
 			
 		}catch(Exception e) {
 

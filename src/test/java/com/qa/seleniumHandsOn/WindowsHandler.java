@@ -17,6 +17,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 
@@ -36,8 +39,12 @@ public class WindowsHandler {
 	public static void main(String[] args) throws IOException, ParseException{
 		
 		
-		System.setProperty("webdriver.chrome.driver",
-				System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
+		/*
+		 * System.setProperty("webdriver.chrome.driver",
+		 * System.getProperty("user.dir")+"//drivers//chromedriver");
+		 */
+		
+		WebDriverManager.chromedriver().setup();
 
 		 driver = new ChromeDriver();
 		 Log.info("Browser Instantiated");

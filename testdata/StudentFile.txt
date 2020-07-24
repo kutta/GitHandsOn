@@ -1,10 +1,6 @@
-Students    Marks
-======================
-Abhi        85
-Bhavani     55
-Mahesh      67
-Nalini      85
-Shloka      105
-Kaya        85
-Siya        58
-Vikas       105
+Students Mark
+1 Ariella Ferrera
+2 Julia
+10 Romi Rain
+4 Syren
+5 Fyre

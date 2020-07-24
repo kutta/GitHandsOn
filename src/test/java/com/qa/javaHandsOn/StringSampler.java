@@ -11,6 +11,7 @@ import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.lang.System;
 
 public class StringSampler {
 
@@ -36,7 +37,7 @@ public class StringSampler {
 		
 		/* stringTest(mainArray); */
 		
-		reverseString(s);
+//		reverseString(s);
 		
 		/*CountCharacterOccurence("Koushick Kannan");*/
 		
@@ -52,7 +53,7 @@ public class StringSampler {
 		/*characterPercentage("Tiger Runs @ The Speed Of 100 km/hour.");
 		characterPercentage("My e-mail : eMail_Address321@anymail.com");*/
 		
-		/*replaceSpecificStr("75", "105");*/
+		replaceSpecificStr("Romi", "Romi Rain");
 
 	}
 
@@ -576,19 +577,18 @@ public class StringSampler {
 	
 	public static void replaceSpecificStr(String oldStr, String newStr) throws IOException{
 		
-		File file = new File(System.getProperty("user.dir") + "\\testdata\\StudentFile.txt");
+		File file = new File(System.getProperty("user.dir") + "//testdata//StudentFile.txt");
 		
-		BufferedReader buffer = new BufferedReader(new FileReader(file));
+		BufferedReader reader = new BufferedReader(new FileReader(file));
 		
 		String oldContent = "";
 		
-		String line = buffer.readLine();
+		String line = reader.readLine();
 		
 		while(line != null) {
-			
-			oldContent = oldContent+line+System.lineSeparator();
-			
-			line = buffer.readLine();
+
+			oldContent = oldContent + line + System.lineSeparator();
+			line = reader.readLine();
 		}
 		
 		String newContent = oldContent.replaceAll(oldStr, newStr);

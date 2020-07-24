@@ -61,7 +61,7 @@ public class TestJava {
 		 * System.out.println(Arrays.toString(mergerArr));
 		 */
 	        
-	        reverseString("Brandi Love");
+	        reverseString("Brandi Love, Ariella Ferrera");
 
 	}
 
