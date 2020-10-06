@@ -1,9 +1,5 @@
 package com.qa.restAssuredHandsOn;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -12,11 +8,12 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.json.JSONObject;
 import org.testng.annotations.Test;
 
-import io.restassured.response.Response;
-
-import org.json.JSONObject;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class APIAutoTest {
 

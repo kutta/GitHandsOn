@@ -1,15 +1,11 @@
 package com.qa.javaHandsOn;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import com.opencsv.CSVReader;
+
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.logging.Logger;
-
-import com.opencsv.CSVReader;
 
 public class Files {
 	
